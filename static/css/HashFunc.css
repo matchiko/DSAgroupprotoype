@@ -1,0 +1,304 @@
+.hash-functions {
+  margin: 0;
+  position: absolute;
+  top: 158px;
+  left: 295px;
+  font-size: inherit;
+  letter-spacing: -0.01em;
+  line-height: 72px;
+  font-weight: 600;
+  font-family: inherit;
+  display: inline-block;
+  width: 750px;
+  height: 144px;
+}
+.operators-are-positioned {
+  position: absolute;
+  top: calc(50% - 75.75px);
+  left: calc(50% - 532.5px);
+  line-height: 28px;
+  display: inline-block;
+  width: 1065px;
+  height: 151.5px;
+}
+.department-of-science {
+  position: absolute;
+  top: calc(50% + 98.65px);
+  left: calc(50% + 156.8px);
+  line-height: 28px;
+  display: inline-block;
+  text-align: right;
+  width: 375.7px;
+  height: 29.4px;
+}
+.what-defines-an {
+  margin: 0;
+  position: absolute;
+  top: calc(50% - 128.05px);
+  left: calc(50% - 532.5px);
+  font-size: var(--font-size-5xl);
+  letter-spacing: -0.01em;
+  line-height: 36px;
+  font-weight: 700;
+  font-family: var(--font-poppins);
+  display: inline-block;
+  width: 607.8px;
+  height: 39.2px;
+}
+.definition-of-infix-expression {
+  position: absolute;
+  top: calc(50% - 273px);
+  left: calc(50% - 601px);
+  width: 1065px;
+  height: 256.1px;
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
+.operands-precede-operators {
+  margin: 0;
+}
+.operands-precede-operators-container {
+  position: absolute;
+  top: calc(50% - 75.75px);
+  left: calc(50% - 601px);
+  line-height: 28px;
+  display: inline-block;
+  width: 1065px;
+  height: 151.5px;
+}
+.department-of-computer {
+  position: absolute;
+  top: calc(50% + 98.65px);
+  left: calc(50% + 88.3px);
+  line-height: 28px;
+  display: inline-block;
+  text-align: right;
+  width: 375.7px;
+  height: 29.4px;
+}
+.science {
+  position: absolute;
+  top: calc(50% + 80.05px);
+  left: calc(50% + 177px);
+  line-height: 28px;
+  display: inline-block;
+  text-align: right;
+  width: 424px;
+  height: 27px;
+}
+.what-defines-a {
+  margin: 0;
+  position: absolute;
+  top: calc(50% - 128.05px);
+  left: calc(50% - 601px);
+  font-size: var(--font-size-5xl);
+  letter-spacing: -0.01em;
+  line-height: 36px;
+  font-weight: 700;
+  font-family: var(--font-poppins);
+  display: inline-block;
+  width: 607.8px;
+  height: 39.2px;
+}
+.definition-of-postfix-expressi {
+  position: absolute;
+  top: calc(50% + 16.9px);
+  left: calc(50% - 601px);
+  width: 1202px;
+  height: 256.1px;
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
+.def3 {
+  position: absolute;
+  top: calc(50% - 0px);
+  left: calc(50% - 425px);
+  width: 1202px;
+  height: 546px;
+}
+.your-converted-postfix-container {
+  position: absolute;
+  top: 87px;
+  left: 80px;
+  line-height: 28px;
+}
+.type-your-infix {
+  position: absolute;
+  height: 33.33%;
+  width: 100%;
+  top: 1.19%;
+  left: 0%;
+  line-height: 28px;
+  display: inline-block;
+}
+.frame {
+  border: 1px solid var(--color-gainsboro-100);
+  outline: none;
+  font-family: var(--font-inter);
+  font-size: var(--font-size-sm);
+  background-color: var(--color-white);
+  position: absolute;
+  width: 100%;
+  top: 28px;
+  right: 0%;
+  left: 0%;
+  border-radius: var(--br-8xs);
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs) var(--padding-mini);
+  color: var(--color-lightgray);
+}
+.ob-formstype-your-infix-notat {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 84px;
+  overflow: hidden;
+}
+.name {
+  position: relative;
+  font-size: var(--font-size-sm);
+  line-height: 28px;
+  font-family: var(--font-inter);
+  color: var(--color-white);
+  text-align: center;
+}
+.ob-formssubmit {
+  cursor: pointer;
+  border: 1px solid var(--color-gray-200);
+  padding: var(--padding-3xs) var(--padding-mini);
+  background-color: var(--color-gray-200);
+  position: absolute;
+  top: 28px;
+  left: 323px;
+  border-radius: var(--br-8xs);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.submit-field {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 400px;
+  height: 84px;
+  text-align: left;
+  color: var(--color-black);
+}
+.infix-to-postfix {
+  position: absolute;
+  top: 293px;
+  left: 655px;
+  width: 400px;
+  height: 143px;
+  text-align: center;
+  font-size: var(--font-size-sm);
+  font-family: var(--font-inter);
+}
+.sidebar-child1 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: var(--color-gray-300);
+  width: 316px;
+  height: 900px;
+}
+.sidebar-child2 {
+  position: absolute;
+  top: 518.5px;
+  left: 96.5px;
+  border-top: 1px solid var(--color-white);
+  box-sizing: border-box;
+  width: 158px;
+  height: 1px;
+}
+.home4 {
+  margin: 0;
+  position: absolute;
+  top: 339px;
+  left: 97px;
+  font-size: inherit;
+  letter-spacing: -0.01em;
+  font-weight: 700;
+  font-family: inherit;
+  display: inline-block;
+  width: 232px;
+  height: 42px;
+  cursor: pointer;
+}
+.about-us3 {
+  margin: 0;
+  position: absolute;
+  top: 447px;
+  left: 97px;
+  font-size: inherit;
+  letter-spacing: -0.01em;
+  font-weight: 700;
+  font-family: inherit;
+  display: inline-block;
+  width: 232px;
+  height: 42px;
+  cursor: pointer;
+}
+.learn-more-about2 {
+  position: absolute;
+  top: 555px;
+  left: 97px;
+  font-size: var(--font-size-sm);
+  letter-spacing: -0.01em;
+  font-weight: 300;
+  display: inline-block;
+  width: 157px;
+  height: 42px;
+}
+.contacts2 {
+  margin: 0;
+  position: absolute;
+  top: 393px;
+  left: 97px;
+  font-size: inherit;
+  letter-spacing: -0.01em;
+  font-weight: 700;
+  font-family: inherit;
+  display: inline-block;
+  width: 232px;
+  height: 42px;
+  cursor: pointer;
+}
+.logowhite-icon2 {
+  position: absolute;
+  top: 113px;
+  left: 97px;
+  width: 68px;
+  height: 154px;
+  object-fit: contain;
+}
+.sidebar2 {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 329px;
+  height: 900px;
+  font-size: var(--font-size-5xl);
+}
+.hashfunc1 {
+  position: relative;
+  background-color: var(--color-black);
+  width: 100%;
+  height: 1862px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-29xl);
+  color: var(--color-white);
+  font-family: var(--font-poppins);
+}

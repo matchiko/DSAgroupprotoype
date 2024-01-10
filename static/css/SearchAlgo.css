@@ -1,0 +1,157 @@
+.header {
+  position: absolute;
+  top: 0px;
+  right: -113px;
+  width: 1256px;
+  height: 709px;
+  background-image: url("./public/header@3x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.bestperforming {
+  position: absolute;
+  top: calc(50% - 974.25px);
+  left: calc(50% - 490px);
+  width: 971px;
+  height: 264px;
+  background-image: url("./public/bestperforming@3x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.impactdataset {
+  position: absolute;
+  top: calc(50% - 281.25px);
+  left: calc(50% - 490px);
+  width: 971px;
+  height: 258px;
+  background-image: url("./public/impactdataset@3x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.specificdataset {
+  position: absolute;
+  top: calc(50% - 622.25px);
+  left: calc(50% - 505px);
+  width: 993px;
+  height: 275px;
+  background-image: url("./public/specificdataset@3x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.conclusion {
+  position: absolute;
+  top: calc(50% + 47.75px);
+  left: calc(50% - 489px);
+  width: 994px;
+  height: 316px;
+  background-image: url("./public/conclusion@3x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.specifics {
+  position: absolute;
+  top: calc(50% + 434.75px);
+  left: calc(50% - 489px);
+  width: 975px;
+  height: 539.5px;
+  background-image: url("./public/specifics@3x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.explntn {
+  position: absolute;
+  top: calc(50% - 754px);
+  left: calc(50% - 441px);
+  width: 1010px;
+  height: 1948.5px;
+}
+.sidebar-inner {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: var(--color-gray-300);
+  width: 316px;
+  height: 900px;
+}
+.line-div {
+  position: absolute;
+  top: 518.5px;
+  left: 96.5px;
+  border-top: 1px solid var(--color-white);
+  box-sizing: border-box;
+  width: 158px;
+  height: 1px;
+}
+.home3 {
+  position: absolute;
+  top: 339px;
+  left: 97px;
+  letter-spacing: -0.01em;
+  display: inline-block;
+  width: 232px;
+  height: 42px;
+  cursor: pointer;
+}
+.about-us2 {
+  position: absolute;
+  top: 447px;
+  left: 97px;
+  letter-spacing: -0.01em;
+  display: inline-block;
+  width: 232px;
+  height: 42px;
+  cursor: pointer;
+}
+.learn-more-about1 {
+  position: absolute;
+  top: 555px;
+  left: 97px;
+  font-size: var(--font-size-sm);
+  letter-spacing: -0.01em;
+  font-weight: 300;
+  display: inline-block;
+  width: 157px;
+  height: 42px;
+}
+.contacts1 {
+  position: absolute;
+  top: 393px;
+  left: 97px;
+  letter-spacing: -0.01em;
+  display: inline-block;
+  width: 232px;
+  height: 42px;
+  cursor: pointer;
+}
+.logowhite-icon1 {
+  position: absolute;
+  top: 113px;
+  left: 97px;
+  width: 68px;
+  height: 154px;
+  object-fit: contain;
+}
+.sidebar1 {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 329px;
+  height: 900px;
+}
+.searchalgo1 {
+  position: relative;
+  background-color: var(--color-black);
+  width: 100%;
+  height: 3030px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-white);
+  font-family: var(--font-poppins);
+}

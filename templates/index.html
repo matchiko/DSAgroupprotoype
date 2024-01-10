@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="/static/css/global.css" />
+    <link rel="stylesheet" href="/static/css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;1,400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="landingpage">
+      <section class="landingpage-child"></section>
+      <div class="front">
+        <section class="bgwidget"></section>
+        <button class="miniwidget">
+          <img
+            class="miniwidget-icon"
+            alt=""
+            src="/static/css/public/miniwidget@2x.png"
+          />
+
+          <div class="button">
+            <div class="button-child"></div>
+            <div class="log-in">Log in</div>
+          </div>
+          <img class="loginicon" alt="" src="/static/css/public/loginicon@2x.png" />
+        </button>
+        <div class="titlewidget">
+          <img
+            class="titlewidget-icon"
+            alt=""
+            src="/static/css/public/titlewidget@2x.png"
+          />
+
+          <h1 class="see-list-of-container">
+            <span class="see-list-of-container1">
+              <p class="see-list">See List</p>
+              <p class="see-list">of Apps!</p>
+            </span>
+          </h1>
+          <button class="seebutton" id="seeButton">
+            <div class="seebutton-child"></div>
+            <div class="join-today">see more</div>
+          </button>
+        </div>
+        <div class="title">
+          <img class="vector-icon" alt="" src="/static/css/public/vector@2x.png" />
+
+          <button class="trybutton" id="tryButton">
+            <div class="trybutton-child"></div>
+            <div class="join-today1">Try Apps!</div>
+          </button>
+          <button class="seebutton1" id="seeButton1">
+            <div class="seebutton-item"></div>
+            <div class="join-today">see more</div>
+          </button>
+        </div>
+        <img
+          class="groupmembers-icon"
+          alt=""
+          src="/static/css/public/groupmembers@2x.png"
+        />
+      </div>
+      <header class="sectionnavbar">
+        <div class="home-parent">
+          <a href="/" style="color: black; text-decoration: none;" class="home">Home</a>
+          <div class="about" id="aboutText">About</div>
+          <div class="products" id="productsText">Apps</div>
+          <div class="contact" id="contactText">Contact</div>
+        </div>
+        <img class="asset-3-1" alt="" src="/static/css/public/asset-3-1@2x.png" />
+      </header>
+    </div>
+
+    <script>
+      var seeButton = document.getElementById("seeButton");
+      if (seeButton) {
+        seeButton.addEventListener("click", function (e) {
+          window.location.href = "/AppList.html";
+        });
+      }
+      
+      var tryButton = document.getElementById("tryButton");
+      if (tryButton) {
+        tryButton.addEventListener("click", function (e) {
+          window.location.href = "/AppList.html";
+        });
+      }
+      
+      var seeButton1 = document.getElementById("seeButton1");
+      if (seeButton1) {
+        seeButton1.addEventListener("click", function (e) {
+          window.location.href = "/AppList.html";
+        });
+      }
+      
+      var aboutText = document.getElementById("aboutText");
+      if (aboutText) {
+        aboutText.addEventListener("click", function (e) {
+          window.location.href = "/MemberPage.html";
+        });
+      }
+      
+      var productsText = document.getElementById("productsText");
+      if (productsText) {
+        productsText.addEventListener("click", function (e) {
+          window.location.href = "/AppList.html";
+        });
+      }
+      
+      var contactText = document.getElementById("contactText");
+      if (contactText) {
+        contactText.addEventListener("click", function (e) {
+          window.location.href = "/MemberPage.html";
+        });
+      }
+      </script>
+  </body>
+</html>

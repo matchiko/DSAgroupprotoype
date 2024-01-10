@@ -1,0 +1,328 @@
+.landingpage-child {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 100%;
+  right: 0%;
+  bottom: 100%;
+  left: 0%;
+  background-image: url("./public/bg@2x.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.bgwidget {
+  position: absolute;
+  top: calc(50% - 482px);
+  left: calc(50% - 664.5px);
+  width: 1329px;
+  height: 964px;
+  background-image: url("./public/bgwidget@3x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.miniwidget-icon {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 131.8px;
+  height: 62.6px;
+  object-fit: cover;
+}
+.button-child {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  left: 0%;
+  border-radius: 6px;
+  background-color: var(--color-black);
+  border: 1px solid var(--color-darkviolet);
+  box-sizing: border-box;
+  display: none;
+}
+.log-in {
+  position: absolute;
+  top: 14.7%;
+  left: 25.32%;
+  font-size: var(--font-size-mini);
+  letter-spacing: -0.01em;
+  font-weight: 500;
+  font-family: var(--font-poppins);
+  color: var(--color-white);
+  text-align: center;
+}
+.button {
+  position: absolute;
+  top: 15.2px;
+  left: 42.7px;
+  width: 85.3px;
+  height: 31.3px;
+}
+.loginicon {
+  position: absolute;
+  top: 13.5px;
+  left: 16.7px;
+  width: 37px;
+  height: 37.5px;
+  object-fit: cover;
+}
+.miniwidget {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: calc(50% - 473.5px);
+  left: calc(50% + 475.8px);
+  width: 131.8px;
+  height: 62.6px;
+}
+.titlewidget-icon {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 376.3px;
+  height: 333.7px;
+  object-fit: cover;
+}
+.see-list {
+  margin: 0;
+}
+.see-list-of-container1 {
+  width: 100%;
+}
+.see-list-of-container {
+  margin: 0;
+  position: absolute;
+  top: 52.1px;
+  left: 47.4px;
+  font-size: inherit;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  width: 339.3px;
+  height: 159.2px;
+}
+.seebutton-child {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  left: 0%;
+  border-radius: var(--br-25xl);
+  background-color: var(--color-white);
+}
+.join-today {
+  position: absolute;
+  top: 27.5%;
+  left: 20.33%;
+  font-size: var(--font-size-mini);
+  letter-spacing: -0.01em;
+  font-weight: 500;
+  font-family: var(--font-poppins);
+  color: var(--color-darkslategray-100);
+  text-align: center;
+}
+.seebutton {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 237.7px;
+  left: 203px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 121px;
+  height: 52px;
+}
+.seebutton:hover {
+  animation: 1s ease 0s infinite normal none shadow-inset-center;
+  opacity: 1;
+}
+
+@keyframes shadow-inset-center {
+  0% {
+    box-shadow: inset 0 0 0 0 transparent;
+  }
+  100% {
+    box-shadow: inset 0 0 14px 0 rgb(0 0 0 / 50%);
+  }
+}
+.titlewidget {
+  position: absolute;
+  top: calc(50% + 148.3px);
+  left: calc(50% - 664.5px);
+  width: 386.7px;
+  height: 333.7px;
+}
+.vector-icon {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 419.9px;
+  height: 190.1px;
+  object-fit: cover;
+}
+.trybutton-child {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  left: 0%;
+  border-radius: var(--br-25xl);
+  background-color: var(--color-darkslategray-100);
+}
+.trybutton-child:hover {
+  background-color: rgba(1, 0, 255, 0.9);
+  animation: 1s ease 0s infinite normal none shadow-inset-center;
+  opacity: 1;
+}
+.join-today1 {
+  position: absolute;
+  top: 27.5%;
+  left: 21.16%;
+  font-size: var(--font-size-mini);
+  letter-spacing: -0.01em;
+  font-weight: 500;
+  font-family: var(--font-poppins);
+  color: var(--color-white);
+  text-align: center;
+}
+.trybutton {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 216px;
+  left: 0px;
+  width: 121px;
+  height: 52px;
+}
+.seebutton-item {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  left: 0%;
+  border-radius: var(--br-25xl);
+  background-color: rgba(51, 50, 65, 0);
+  border: 1px solid var(--color-black);
+  box-sizing: border-box;
+}
+.seebutton1 {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 216px;
+  left: 140px;
+  width: 121px;
+  height: 52px;
+}
+.title {
+  position: absolute;
+  top: calc(50% - 390px);
+  left: calc(50% - 574.5px);
+  width: 419.9px;
+  height: 268px;
+}
+.groupmembers-icon {
+  position: absolute;
+  top: calc(50% + 223px);
+  left: calc(50% - 34.5px);
+  width: 631.5px;
+  height: 217.5px;
+  object-fit: cover;
+}
+.front {
+  position: absolute;
+  top: calc(50% - 454px);
+  left: calc(50% - 664px);
+  width: 1329px;
+  height: 964px;
+}
+.home {
+  text-decoration: none;
+  position: absolute;
+  top: calc(50% - 12px);
+  left: 0%;
+  line-height: 24px;
+  color: inherit;
+}
+.about {
+  position: absolute;
+  top: calc(50% - 12px);
+  left: 14.74%;
+  line-height: 24px;
+  cursor: pointer;
+}
+.products {
+  position: absolute;
+  top: calc(50% - 12px);
+  left: 76.55%;
+  line-height: 24px;
+  cursor: pointer;
+}
+.contact {
+  position: absolute;
+  top: calc(50% - 12px);
+  left: 90.45%;
+  line-height: 24px;
+  cursor: pointer;
+}
+.home-parent {
+  position: absolute;
+  width: 41.46%;
+  top: calc(50% - 12.4px);
+  right: 29.03%;
+  left: 29.51%;
+  height: 24px;
+}
+.asset-3-1 {
+  position: absolute;
+  top: calc(50% - 21.4px);
+  left: calc(50% - 10px);
+  width: 19px;
+  height: 43px;
+  object-fit: contain;
+}
+.sectionnavbar {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  right: 0%;
+  left: 0%;
+  background-color: var(--colour-background-light-grey);
+  height: 52.8px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-black);
+  font-family: var(--font-poppins);
+}
+.landingpage {
+  position: relative;
+  background-color: var(--color-black);
+  width: 100%;
+  height: 1096px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-29xl);
+  color: var(--color-white);
+  font-family: var(--font-poppins);
+}
+body {background-color: rgb(0, 0, 0);}

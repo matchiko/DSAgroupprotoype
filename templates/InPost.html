@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="/static/css/global.css" />
+    <link rel="stylesheet" href="/static/css/InPost.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;1,400&display=swap"
+    />
+  </head>
+  <body>
+    
+    <div class="inpost1">
+      <h1 class="convert-infix-to">Convert Infix to Postfix</h1>
+      <section class="definition-of-infix-expression2">
+        <div class="operators-are-positioned1">
+          Operators are positioned between their operands, representing the
+          conventional method of expressing mathematical operations. An
+          expression like A * ( B + C ) / D typically implies a specific
+          sequence of actions: "First, add B and C together, then multiply the
+          result by A, and finally, divide by D to obtain the ultimate result."
+          In infix notation, additional details are required to clarify the
+          order of operator evaluation. This involves inherent language rules
+          governing operator precedence and associativity, as well as the use of
+          brackets ( ) to enable users to override these default rules. For
+          instance, standard rules of associativity dictate a left-to-right
+          order of operations, implying that the multiplication by A takes
+          precedence over the division by D. Similarly, established rules of
+          precedence prioritize multiplication and division before addition and
+          subtraction.
+        </div>
+        <i class="department-of-computer3"
+          >Department of Computer Science, University of Manchester</i
+        >
+        <h2 class="what-defines-an1">What defines an infix expression?</h2>
+      </section>
+      <section class="definition-of-postfix-expressi2">
+        <div class="operators-are-positioned1">
+          <p class="operands-precede-operators1">
+            Operands precede operators in written expressions. The given infix
+            expression, A B C + * D /, is synonymous with the stated order of A,
+            B, C, addition, multiplication, and division. The sequence of
+            operator evaluation follows a consistent left-to-right pattern, and
+            the arrangement cannot be altered using brackets. In the provided
+            example, as "+" precedes "*", addition is performed before
+            multiplication. Operators directly affect the values immediately to
+            their left; for instance, the "+" involves the values "B" and "C."
+            To emphasize this, unnecessary brackets can be added, such as ( (A
+            (B C +) *) D /), clarifying that multiplication employs the
+            preceding values "A" and the sum of "B" and "C." Similarly, division
+            utilizes the product of multiplication and the value "D." This
+            notation is also referred to as "Reverse Polish Notation."
+          </p>
+        </div>
+        <i class="department-of-computer3"
+          >Department of Computer Science, University of Manchester</i
+        >
+        <h2 class="what-defines-an1">What defines a postfix expression?</h2>
+      </section>
+      <div class="infix-to-postfix">
+        <div class="your-converted-postfix-container">
+          <p class="operands-precede-operators">
+            Your converted postfix expression is:
+          </p>
+          <p class="operands-precede-operators">
+            {% if result != None %}
+            <div class="alert alert-success mt-3" role="alert">
+              {{ result }}
+            </div>
+            {% endif %}
+            {% if error and result != None %}
+              <div class="alert alert-danger mt-3" role="alert">
+                {{ error }}
+              </div>
+            {% endif %}
+            {% if result == None %}
+              <div class="alert" role="alert">
+                no input data.
+              </div>
+            {% endif %}
+          </p>
+        </div>
+
+        <div class="submit-field">
+          <form method="post">
+              <div class="ob-formstype-your-infix-notat">
+                  <div class="type-your-infix">Type your infix notation here</div>
+                  <div class="frame">
+                      <input type="text" class="form-control" id="infix" name="infix" placeholder="Type your infix notation here" size="40" required>
+                  </div>
+              </div>
+              <div class="ob-formssubmit">
+                  <button type="submit">Convert</button>
+              </div>
+          </form>
+        </div>
+      </div>
+      <div class="sidebar4">
+        <div class="sidebar-child5"></div>
+        <div class="sidebar-child6"></div>
+        <h2 class="home6" id="home">Home</h2>
+        <h2 class="about-us5" id="aboutUs">About Us</h2>
+        <div class="learn-more-about4">Learn more about Python apps</div>
+        <h2 class="contacts4" id="contacts">Contacts</h2>
+        <img class="logowhite-icon4" alt="" src="/static/css/public/logowhite@2x.png" />
+      </div>
+    </div>
+
+    <script>
+      var home = document.getElementById("home");
+      if (home) {
+        home.addEventListener("click", function (e) {
+          window.location.href = "/";
+        });
+      }
+      
+      var aboutUs = document.getElementById("aboutUs");
+      if (aboutUs) {
+        aboutUs.addEventListener("click", function (e) {
+          window.location.href = "/MemberPage.html";
+        });
+      }
+      
+      var contacts = document.getElementById("contacts");
+      if (contacts) {
+        contacts.addEventListener("click", function (e) {
+          window.location.href = "/MemberPage.html";
+        });
+      }
+      </script>
+  </body>
+</html>

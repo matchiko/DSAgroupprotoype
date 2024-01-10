@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="/static/css/global.css" />
+    <link rel="stylesheet" href="/static/css/QueDeque.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;1,400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="quedeque">
+      <div class="def2">
+        <section class="definition-of-infix-expression1">
+          <div class="a-queue-is">
+            A queue is a data structure that adheres to the First-In-First-Out
+            (FIFO) principle, indicating that the first element inserted into
+            the queue will be the first one to be removed. This concept is
+            analogous to real-world queues or lines, where the first person to
+            join the queue is the first to receive service. The implementation
+            of queues can vary and is adaptable to specific application
+            requirements. Queues can be realized using diverse data structures
+            like arrays, linked lists, or others. They find common usage in
+            tasks such as scheduling, breadth-first search algorithms, and
+            resource management within computer systems.
+          </div>
+          <i class="department-of-computer1"
+            >Department of Computer Science, University of Michigan Tech</i
+          >
+          <h2 class="what-defines-the">
+            What defines the queue data structure?
+          </h2>
+        </section>
+        <section class="definition-of-postfix-expressi1">
+          <div class="a-queue-is">
+            <p class="the-dequeue-operation">
+              The dequeue operation in a queue involves the removal of an
+              element from the front of the queue, adhering to the First In,
+              First Out (FIFO) principle. This means that the element positioned
+              at the front, having been in the queue the longest, is the first
+              one to be removed. In a queue, elements are added to the rear
+              (enqueue operation) and removed from the front (dequeue
+              operation). This maintains the order in which elements were added,
+              ensuring that the first element to be enqueued is the first one to
+              be dequeued. The dequeue operation is crucial for processing
+              elements in the order they were received, making queues suitable
+              for various applications such as task scheduling, breadth-first
+              search algorithms, and managing resources in computer systems.
+            </p>
+          </div>
+          <i class="department-of-computer1"
+            >Department of Computer Science, University of Illinois</i
+          >
+          <h2 class="what-defines-the">
+            What defines the dequeue data structure?
+          </h2>
+        </section>
+      </div>
+      <div class="sidebar3">
+        <div class="sidebar-child3"></div>
+        <div class="sidebar-child4"></div>
+        <h2 class="home5" id="home">Home</h2>
+        <h2 class="about-us4" id="aboutUs">About Us</h2>
+        <div class="learn-more-about3">Learn more about Python apps</div>
+        <h2 class="contacts3" id="contacts">Contacts</h2>
+        <img class="logowhite-icon3" alt="" src="/static/css/public/logowhite@2x.png" />
+      </div>
+      <div class="queue">
+        <div class="results1">
+          <div class="results-child"></div>
+          <h1 class="results2">Results</h1>
+          <ul>
+              {% for item in queue_result %}
+                  <li>{{ item }}</li>
+              {% endfor %}
+          </ul>
+
+          <ul>
+              {% for item in deque_result %}
+                  <li>{{ item }}</li>
+              {% endfor %}
+          </ul>
+        </div>
+        <form method="post" action="QueDeque.html" class="queuedeque">
+          <div class="submit-field1">
+              <div class="ob-formstype-your-infix-notat1">
+                  <div class="type-your-infix1">Queue Function</div>
+                  <input type="text" class="form-control" id="queue_input" name="queue_input" placeholder="Insert text/num to queue (space-separated)." size="40">
+              </div>
+              <div class="ob-formstype-your-infix-notat2">
+                  <div class="type-your-infix1">Deque Function</div>
+                  <input type="text" class="form-control" id="deque_input" name="deque_input" placeholder="Insert text/num to dequeue (space-separated)." size="40">
+              </div>
+              <button class="ob-formssubmit1" type="submit">
+                  <div class="name1">Submit Queue</div>
+              </button>
+              <button class="ob-formssubmit2" type="submit">
+                  <div class="name1">Submit Deque</div>
+              </button>
+              <div class="submit-field-child"></div>
+          </div>
+          <h1 class="queue-deque2">Queue-Deque</h1>
+      </form>
+        
+      </div>
+    </div>
+
+    <script>
+      var home = document.getElementById("home");
+      if (home) {
+        home.addEventListener("click", function (e) {
+          window.location.href = "/";
+        });
+      }
+      
+      var aboutUs = document.getElementById("aboutUs");
+      if (aboutUs) {
+        aboutUs.addEventListener("click", function (e) {
+          window.location.href = "/MemberPage.html";
+        });
+      }
+      
+      var contacts = document.getElementById("contacts");
+      if (contacts) {
+        contacts.addEventListener("click", function (e) {
+          window.location.href = "/MemberPage.html";
+        });
+      }
+      </script>
+  </body>
+</html>

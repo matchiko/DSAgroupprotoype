@@ -1,0 +1,478 @@
+.convert-infix-to {
+  margin: 0;
+  position: absolute;
+  top: 158px;
+  left: 295px;
+  font-size: inherit;
+  letter-spacing: -0.01em;
+  line-height: 72px;
+  font-weight: 600;
+  font-family: inherit;
+  display: inline-block;
+  width: 750px;
+  height: 144px;
+}
+.operators-are-positioned1 {
+  position: absolute;
+  top: 52.3px;
+  left: 0px;
+  line-height: 28px;
+  display: inline-block;
+  width: 1065px;
+  height: 151.5px;
+}
+.department-of-computer3 {
+  position: absolute;
+  top: 226.7px;
+  left: 689.3px;
+  line-height: 28px;
+  display: inline-block;
+  text-align: right;
+  width: 375.7px;
+  height: 29.4px;
+}
+.what-defines-an1 {
+  margin: 0;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-size: var(--font-size-5xl);
+  letter-spacing: -0.01em;
+  line-height: 36px;
+  font-weight: 700;
+  font-family: var(--font-poppins);
+  display: inline-block;
+  width: 607.8px;
+  height: 39.2px;
+}
+.definition-of-infix-expression2 {
+  position: absolute;
+  top: 555px;
+  left: 295px;
+  width: 1065px;
+  height: 256.1px;
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
+.operands-precede-operators1 {
+  color: var(--color-white);
+  font-family: var(--font-poppins);
+  margin: 0;
+}
+.definition-of-postfix-expressi2 {
+  position: absolute;
+  top: 844.9px;
+  left: 295px;
+  width: 1065px;
+  height: 256.1px;
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
+.your-converted-postfix-container1 {
+  position: absolute;
+  top: 87px;
+  left: 80px;
+  line-height: 28px;
+}
+.type-your-infix3 {
+  position: absolute;
+  height: 33.33%;
+  width: 100%;
+  top: 1.19%;
+  left: 0%;
+  line-height: 28px;
+  display: inline-block;
+}
+.frame3 {
+  border: 1px solid var(--color-gainsboro-100);
+  outline: none;
+  font-family: var(--font-inter);
+  font-size: var(--font-size-sm);
+  background-color: var(--color-white);
+  position: absolute;
+  width: 100%;
+  top: 28px;
+  right: 0%;
+  left: 0%;
+  border-radius: var(--br-8xs);
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs) var(--padding-mini);
+  color: var(--color-lightgray);
+}
+.ob-formstype-your-infix-notat3 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 84px;
+  overflow: hidden;
+}
+.name3 {
+  position: relative;
+  font-size: var(--font-size-sm);
+  line-height: 28px;
+  font-family: var(--font-inter);
+  color: var(--color-white);
+  text-align: center;
+}
+.ob-formssubmit3 {
+  cursor: pointer;
+  border: 1px solid var(--color-gray-200);
+  padding: var(--padding-3xs) var(--padding-mini);
+  background-color: var(--color-gray-200);
+  position: absolute;
+  top: 28px;
+  left: 323px;
+  border-radius: var(--br-8xs);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.submit-field2 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 400px;
+  height: 84px;
+  text-align: left;
+  color: var(--color-black);
+}
+.infix-to-postfix1 {
+  position: absolute;
+  top: 293px;
+  left: 655px;
+  width: 400px;
+  height: 143px;
+  text-align: center;
+  font-size: var(--font-size-sm);
+  font-family: var(--font-inter);
+}
+.sidebar-child5 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: var(--color-gray-300);
+  width: 316px;
+  height: 900px;
+}
+.sidebar-child6 {
+  position: absolute;
+  top: 518.5px;
+  left: 96.5px;
+  border-top: 1px solid var(--color-white);
+  box-sizing: border-box;
+  width: 158px;
+  height: 1px;
+}
+.home6 {
+  margin: 0;
+  position: absolute;
+  top: 339px;
+  left: 97px;
+  font-size: inherit;
+  letter-spacing: -0.01em;
+  font-weight: 700;
+  font-family: inherit;
+  display: inline-block;
+  width: 232px;
+  height: 42px;
+  cursor: pointer;
+}
+.about-us5 {
+  margin: 0;
+  position: absolute;
+  top: 447px;
+  left: 97px;
+  font-size: inherit;
+  letter-spacing: -0.01em;
+  font-weight: 700;
+  font-family: inherit;
+  display: inline-block;
+  width: 232px;
+  height: 42px;
+  cursor: pointer;
+}
+.learn-more-about4 {
+  position: absolute;
+  top: 555px;
+  left: 97px;
+  font-size: var(--font-size-sm);
+  letter-spacing: -0.01em;
+  font-weight: 300;
+  display: inline-block;
+  width: 157px;
+  height: 42px;
+}
+.contacts4 {
+  margin: 0;
+  position: absolute;
+  top: 393px;
+  left: 97px;
+  font-size: inherit;
+  letter-spacing: -0.01em;
+  font-weight: 700;
+  font-family: inherit;
+  display: inline-block;
+  width: 232px;
+  height: 42px;
+  cursor: pointer;
+}
+.logowhite-icon4 {
+  position: absolute;
+  top: 113px;
+  left: 97px;
+  width: 68px;
+  height: 154px;
+  object-fit: contain;
+}
+.sidebar4 {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 329px;
+  height: 900px;
+  font-size: var(--font-size-5xl);
+}
+.inpost1 {
+  position: relative;
+  background-color: var(--color-black);
+  width: 100%;
+  height: 1306px;
+  overflow: hidden;
+  text-align: left;
+  color: var(--color-white);
+  font-family: var(--font-poppins);
+}
+.miniwidget-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 139px;
+  height: 66px;
+  object-fit: cover;
+}
+.button-child {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 6px;
+  background-color: var(--color-black);
+  border: 1px solid #bd00ff;
+  box-sizing: border-box;
+  display: none;
+}
+.log-in {
+  position: absolute;
+  top: 15.45%;
+  left: 25.67%;
+  letter-spacing: -0.01em;
+  font-weight: 500;
+}
+.button,
+.contacts {
+  position: absolute;
+  top: 16px;
+  left: 45px;
+  width: 90px;
+  height: 33px;
+}
+.contacts {
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  width: 38.7px;
+  height: 38.7px;
+}
+.icons8-log-in-96-1 {
+  position: absolute;
+  top: 7.8px;
+  left: 7.1px;
+  width: 22.5px;
+  height: 22.5px;
+  object-fit: cover;
+}
+.log-in1,
+.miniwidget {
+  position: absolute;
+  top: 14px;
+  left: 18px;
+  width: 38.7px;
+  height: 38.7px;
+}
+.miniwidget {
+  top: 40px;
+  left: 1412px;
+  width: 139px;
+  height: 66px;
+  text-align: center;
+  font-size: 15px;
+  font-family: var(--font-poppins);
+}
+.taskbar-icon {
+  position: absolute;
+  top: 31px;
+  left: 68px;
+  width: 115px;
+  height: 1017px;
+  object-fit: cover;
+}
+.convert-infix-to {
+  position: absolute;
+  top: 158px;
+  left: 301px;
+  font-size: 48px;
+  letter-spacing: -0.01em;
+  line-height: 72px;
+  font-weight: 600;
+  font-family: var(--font-poppins);
+  display: inline-block;
+  width: 750px;
+  height: 144px;
+}
+.department-of-computer,
+.operators-are-positioned {
+  position: absolute;
+  top: 48px;
+  left: 0;
+  line-height: 28px;
+  display: inline-block;
+  width: 1202px;
+  height: 139px;
+}
+.department-of-computer {
+  top: 208px;
+  left: 778px;
+  text-align: right;
+  width: 424px;
+  height: 27px;
+}
+.what-defines-an {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: var(--font-size-5xl);
+  letter-spacing: -0.01em;
+  line-height: 36px;
+  display: inline-block;
+  font-family: var(--font-poppins);
+  width: 686px;
+  height: 36px;
+}
+.definition-of-infix-expression {
+  position: absolute;
+  top: 547px;
+  left: 321px;
+  width: 1202px;
+  height: 235px;
+}
+.operands-precede-operators {
+  margin: 0;
+}
+.definition-of-postfix-expressi {
+  position: absolute;
+  top: 813px;
+  left: 321px;
+  width: 1202px;
+  height: 235px;
+}
+.type-your-infix,
+.your-converted-postfix-container {
+  position: absolute;
+  top: 87px;
+  left: 80px;
+  line-height: 28px;
+}
+.type-your-infix {
+  height: 33.33%;
+  width: 100%;
+  top: 1.19%;
+  left: 0;
+  display: inline-block;
+}
+.name {
+  position: relative;
+  line-height: 28px;
+}
+.frame,
+.ob-formstype-your-infix-notat {
+  position: absolute;
+  left: 0;
+  overflow: hidden;
+}
+.frame {
+  width: 100%;
+  top: 28px;
+  right: 0;
+  border-radius: var(--br-8xs);
+  background-color: var(--color-white);
+  border: 1px solid #e2e1e5;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  color: #d2d2d2;
+}
+.ob-formstype-your-infix-notat {
+  top: 0;
+  width: 300px;
+  height: 84px;
+}
+.ob-formssubmit {
+  position: absolute;
+  top: 28px;
+  left: 323px;
+  border-radius: var(--br-8xs);
+  background-color: var(--color-gray);
+  border: 1px solid var(--color-gray);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--padding-3xs) var(--padding-mini);
+  text-align: center;
+  color: var(--color-white);
+}
+.submit-field {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 84px;
+  text-align: left;
+  color: var(--color-black);
+}
+.infix-to-postfix {
+  position: absolute;
+  top: 282px;
+  left: 640px;
+  width: 400px;
+  height: 143px;
+  text-align: center;
+}
+.postfixpage {
+  position: relative;
+  background-color: var(--color-black);
+  width: 100%;
+  height: 1309px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}

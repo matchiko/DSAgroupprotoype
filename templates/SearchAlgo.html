@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="/static/css/global.css" />
+    <link rel="stylesheet" href="/static/css/SearchAlgo.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;1,400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="searchalgo1">
+      <section class="header"></section>
+      <div class="explntn">
+        <section class="bestperforming"></section>
+        <section class="impactdataset"></section>
+        <section class="specificdataset"></section>
+        <section class="conclusion"></section>
+        <section class="specifics"></section>
+      </div>
+      <div class="sidebar1">
+        <div class="sidebar-inner"></div>
+        <div class="line-div"></div>
+        <b class="home3" id="homeText">Home</b>
+        <b class="about-us2" id="aboutUsText">About Us</b>
+        <div class="learn-more-about1">Learn more about Python apps</div>
+        <b class="contacts1" id="contactsText">Contacts</b>
+        <img class="logowhite-icon1" alt="" src="/static/css/public/logowhite@2x.png" />
+      </div>
+    </div>
+
+    <script>
+      var homeText = document.getElementById("homeText");
+      if (homeText) {
+        homeText.addEventListener("click", function (e) {
+          window.location.href = "/";
+        });
+      }
+      
+      var aboutUsText = document.getElementById("aboutUsText");
+      if (aboutUsText) {
+        aboutUsText.addEventListener("click", function (e) {
+          window.location.href = "/MemberPage.html";
+        });
+      }
+      
+      var contactsText = document.getElementById("contactsText");
+      if (contactsText) {
+        contactsText.addEventListener("click", function (e) {
+          window.location.href = "/MemberPage.html";
+        });
+      }
+      </script>
+  </body>
+</html>
