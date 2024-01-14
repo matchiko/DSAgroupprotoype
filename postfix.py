@@ -39,6 +39,7 @@ def precedence(operator):
 def infix_to_postfix(infix_expression):
     stack = Stack()
     postfix = []
+    operators = {'+': 1, '-': 1, '*': 2, '/': 2, '^': 3}
     
     for char in infix_expression:
         if char.isalnum():
@@ -50,7 +51,7 @@ def infix_to_postfix(infix_expression):
                 postfix.append(stack.pop())
             stack.pop()  # Pop '(' from the stack
         elif is_operator(char):
-            while not stack.is_empty() and precedence(stack.peek()) >= precedence(char):
+            while not stack.is_empty() and operators.get(stack.peek(), 0) >= operators[char]:
                 postfix.append(stack.pop())
             stack.push(char)
 
