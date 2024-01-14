@@ -8,6 +8,7 @@ from linear_search import linear_search, linear_search_wrapper
 from ternary_search import ternary_search, ternary_search_wrapper
 from postfix import infix_to_postfix
 from queue_deque import Queue, Deque
+
 app = Flask(__name__, static_url_path='/static')
 
 @app.route('/')
@@ -42,23 +43,20 @@ def inPost():
     else:
         return render_template('InPost.html', result=None)
 
-@app.route('/QueDeque.html', methods=["GET", "POST"])
-def process_queuedeque():
-    queue_input = request.form['queue_input']
-    deque_input = request.form['deque_input']
+queue = []
+@app.route('/QueueDeque.html', methods=["GET", "POST"])
+def queue_operations():
+    Enqueue = None
+    Dequeue = None
+    if request.method == 'POST':
+        if request.form.get('enqueue', ''):
+            data = str(request.form.get('inputString', ''))
+            queue.append(data)
 
-    # Process Queue
-    queue = Queue()
-    for item in queue_input.split():
-        queue.enqueue(item)
-
-    # Process Deque
-    deque = Deque()
-    for item in deque_input.split():
-        deque.add_front(item)
-
-    return render_template('/QueDeque.html', queue_result=queue, deque_result=deque)
-
+        elif request.form.get('dequeue', ''):
+            if queue:
+                Dequeue = queue.pop(0)
+    return render_template('QueueDeque.html', Enqueue=queue, Dequeue=Dequeue)
 
 @app.route('/HashFunc.html')
 def hashFunc():

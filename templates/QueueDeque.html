@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="/static/css/global.css" />
+    <link rel="stylesheet" href="/static/css/InPost.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;1,400&display=swap"
+    />
+  </head>
+  <body>
+    
+    <div class="inpost1">
+      <h1 class="convert-infix-to">Queue-Deque</h1>
+      <section class="definition-of-infix-expression2">
+        <div class="operators-are-positioned1">
+          <br>
+          <br>
+          A queue is a data structure that adheres to the First-In-First-Out (FIFO) principle, 
+          indicating that the first element inserted into the queue will be the first one to be removed. 
+          This concept is analogous to real-world queues or lines, where the first person to join the queue 
+          is the first to receive service. The implementation of queues can vary and is adaptable to specific 
+          application requirements. Queues can be realized using diverse data structures like arrays, linked 
+          lists, or others. They find common usage in tasks such as scheduling, breadth-first search algorithms, 
+          and resource management within computer systems.
+        <i class="department-of-computer3">Department of Computer Science, University of Michigan Tech</i>
+        <h2 class="what-defines-an1">What defines a queue data structure?</h2>
+      </section>
+      <div class="infix-to-postfix">
+        <div class="your-converted-postfix-container">
+          <p class="operands-precede-operators">
+            Your data input is:
+          </p>
+          <p class="operands-precede-operators">
+            {% if Enqueue %}
+            <p class="Anim">Enqueue: {{ " -> ".join(Enqueue) }}</p>
+            {% endif %}
+            {% if Dequeue %}
+            <p class="Anim" > Dequeue: {{ Dequeue }}</p>
+            {% endif %}
+          </p>
+        </div>
+
+        <div class="submit-field">
+            <form action="/QueueDeque.html" method="post" >
+              <label for="inputString" class="Anim" >  Enter a string:     </label>
+              <input type="text" id="inputString" name="inputString" placeholder="Type your data here" size="80">
+              <br>    
+              <input type="submit" id ="enequeue" name="enqueue" value="Queue"  class="btn">
+              <input type="submit" id ="dequeue" name="dequeue" value="Deque" class="btn">
+            </form>
+        </div>
+      </div>
+      <div class="sidebar4">
+        <div class="sidebar-child5"></div>
+        <div class="sidebar-child6"></div>
+        <h2 class="home6" id="home">Home</h2>
+        <h2 class="about-us5" id="aboutUs">About Us</h2>
+        <div class="learn-more-about4">Learn more about Python apps</div>
+        <h2 class="contacts4" id="contacts">Contacts</h2>
+        <img class="logowhite-icon4" alt="" src="/static/css/public/logowhite@2x.png" />
+      </div>
+    </div>
+
+    <script>
+      var home = document.getElementById("home");
+      if (home) {
+        home.addEventListener("click", function (e) {
+          window.location.href = "/";
+        });
+      }
+      
+      var aboutUs = document.getElementById("aboutUs");
+      if (aboutUs) {
+        aboutUs.addEventListener("click", function (e) {
+          window.location.href = "/MemberPage.html";
+        });
+      }
+      
+      var contacts = document.getElementById("contacts");
+      if (contacts) {
+        contacts.addEventListener("click", function (e) {
+          window.location.href = "/MemberPage.html";
+        });
+      }
+      </script>
+  </body>
+</html>
