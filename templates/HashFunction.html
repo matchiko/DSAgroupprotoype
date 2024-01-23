@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='basic_style.css') }}">
+</head>
+<body>
+    <!-- header -->
+    <div class="header">
+        <a href="/">HOME</a>
+        <a href="/MemberPage.html">ABOUT</a>
+        <a href="/AppList.html">APP LISTS</a>
+        <a href="/MemberPage.html">CONTACT</a>
+    </div>
+    <br>
+    <div class="contact-container">
+        <!-- Hash Options -->
+        <h1>Hash Functions</h1>
+        <form action="/HashFunc.html" method="post">
+            <label for="HashOptions">Choose a Hash Function to be Used:</label>
+            <select name="HashOptions" id="HashOptions">
+                <option value="1">Hash Function 1</option>
+                <option value="2">Hash Function 2</option>
+                <option value="3">Hash Function 3</option>
+            </select>
+            <hr>
+            <br>
+            <label for="IntegerSelect">Select the number of Integers to be Used:</label>
+            <input type="text" id="IntegerSelect" name="IntegerSelect">
+            <label for="DataInput">Input your data:</label>
+            <textarea id="DataInput" name="DataInput" rows="4" cols="50"></textarea>
+            <input type="submit" value="Submit">
+        </form>
+        <!-- Results Section -->
+        <hr>
+        <h2>Hash Table</h2>
+        <p>{% if result == None%}
+          No data retrieved.
+        {%endif%}
+        {% if result %}
+          
+            {%for item in result%}
+               {{item}} 
+               <br>
+            {%endfor%}
+          
+        {% endif %}</p>
+</body>
+</html>
