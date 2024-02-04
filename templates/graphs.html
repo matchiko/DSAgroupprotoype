@@ -12,5 +12,32 @@
         <a href="/AppList.html">APP LISTS</a>
         <a href="/MemberPage.html">CONTACT</a>
     </div>
+    <br>
+
+    <div class="contact-container">
+        <h1>Shortest Path</h1>
+        <hr>
+    <form>
+        <label for="startStation">Select Start Station:</label>
+        <select id="startStation" name="startStation">
+            {% for station in stations %}
+                <option value="{{ station }}">{{ station }}</option>
+            {% endfor %}
+        </select>
+    
+        <br>
+
+        <label for="endStation">Select End Station:</label>
+        <select id="endStation" name="endStation">
+            {% for station in stations %}
+                <option value="{{ station }}">{{ station }}</option>
+            {% endfor %}
+        </select>
+    
+        <br>
+    
+        <input type="button" value="Find Shortest Path" onclick="findShortestPath()">
+    </div>
+    </form>
 </body>
 </html>

@@ -9,6 +9,7 @@ from ternary_search import ternary_search, ternary_search_wrapper
 from postfix import infix_to_postfix
 from queue_deque import Queue, Deque
 from HashFunction import HashTable, process_commands
+from graph import Graph
 
 app = Flask(__name__, static_url_path='/static')
 
@@ -170,6 +171,20 @@ def search():
         "iterative_search_result": result_iterative,
        # "recursive_search_result": result_recursive
     })
+
+stations = [
+    'North Avenue', 'Quezon Avenue', 'Kamuning', 'MRT Cubao', 'MRT Santolan', 
+    'Ortigas', 'Shaw Boulevard', 'Boni', 'Guadalupe', 'Buendia', 'Ayala', 
+    'Magallanes', 'Taft Avenue', 'Baclaran', 'EDSA', 'Libertad', 'Gil Puyat', 
+    'Vito Cruz', 'Quirino', 'Pedro Gil', 'United Nations', 'Central Terminal', 
+    'Carriedo', 'Doroteo Jose', 'Bambang', 'Tayuman', 'Recto', 'Legarda', 
+    'Pureza', 'V. Mapa', 'J. Ruiz', 'Gilmore', 'Betty Go-Belmonte', 
+    'Araneta Center-Cubao', 'Anonas', 'Katipunan', 'LRT Santolan', 'Marikina', 
+    'Antipolo'
+]
+@app.route('/graphs.html')
+def train():
+    return render_template('graphs.html', stations=stations)
 
 if __name__ == '__main__':
     app.run(debug=True)
