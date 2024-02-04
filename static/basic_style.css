@@ -225,35 +225,8 @@ table, td{
     margin: 0 auto;
 }
 
-.progress-bar-leadership {
-    width: 75%;
-    height: 10px;
-    background-color: #4CAF50;
-    text-align: center;
-    line-height: 30px;
-    color: white;
-}
-
-.progress-bar-time-management {
-    width: 85%;
-    height: 10px;
-    background-color: #4CAF50;
-    text-align: center;
-    line-height: 30px;
-    color: white;
-}
-
-.progress-bar-video-editing {
-    width: 80%;
-    height: 10px;
-    background-color: #4CAF50;
-    text-align: center;
-    line-height: 30px;
-    color: white;
-}
-
 .contact-container {
-    max-width:500px;
+    max-width:550px;
     margin: 0 auto;
     padding: 20px;
     background-color: #ffffff;
