@@ -262,3 +262,14 @@ input[type="submit"] {
 .link-container {
     display: inline-block;
 }
+
+li{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+img{
+    height: 50%;
+    width: 50%;
+    margin: 0 auto;
+}

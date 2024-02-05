@@ -15,7 +15,7 @@
     <br>
 
     <div class="contact-container">
-        <h1>Shortest Path</h1>
+        <h1>Find the Shortest Path</h1>
         <hr>
         <form action="/graphs.html" method="post">
             <label for="startStation">Select Start Station:</label>
@@ -26,7 +26,7 @@
             </select>
 
             <br>
-
+            <br>
             <label for="endStation">Select End Station:</label>
             <select id="endStation" name="endStation">
                 {% for station in stations %}
@@ -35,18 +35,17 @@
             </select>
 
             <br>
-
+            <br>
             <input type="submit" value="Find Shortest Path">
         </form>
         <hr>
-
+        <h2>Results</h2>
         {% if shortest_path %}
-            <h2>Shortest Path Result</h2>
             <p>Shortest path from {{ start_station }} to {{ end_station }}: {{ shortest_path }}</p>
         {% else %}
-            <h2>No Path Found</h2>
             <p>No path found from {{ start_station }} to {{ end_station }}</p>
         {% endif %}
+        <hr>
     </div>
 </body>
 </html>

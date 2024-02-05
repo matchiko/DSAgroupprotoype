@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='basic_style.css') }}">
+</head>
+<body>
+    <!-- header -->
+    <div class="header">
+        <a href="/">HOME</a>
+        <a href="/MemberPage.html">ABOUT</a>
+        <a href="/AppList.html">APP LISTS</a>
+        <a href="/MemberPage.html">CONTACT</a>
+    </div>
+    <br>
+    <div class="contact-container"><h2>Sorting Algorithm Selector</h2>
+        <form id="sortingForm" action="/SortingAlgo.html" method="post">
+            <label for="algorithm">Select Sorting Algorithm: </label>
+            <select id="algorithm" name="algorithm">
+                <option value="bubble">Bubble Sort</option>
+                <option value="selection">Selection Sort</option>
+                <option value="insertion">Insertion Sort</option>
+                <option value="merge">Merge Sort</option>
+                <option value="quick">Quick Sort</option>
+            </select>
+            <br>
+            <label for="inputArray">Enter numbers (comma-separated): </label>
+            <input type="text" id="inputArray" name="inputArray" required>
+            
+            <button type="submit">Sort</button>
+        </form>
+        <hr>
+            <h2>Results</h2>
+            {% if result %}
+                <p>Sorted Array: {{ result|join(', ') }}</p>
+            {% endif %}
+            <hr>
+            <h2>Types of Sorting Algorithms</h2>
+            <ol>
+                <li>Bubble Sort</li>
+                <p>A straightforward sorting algorithm where each element is compared with its adjacent element and swapped if their positions are incorrect. It derives its name from the way lighter elements 'bubble' to the top while heavier elements 'settle down'. Although easy to understand, bubble sort is less efficient due to its high average and worst-case complexity.</p>
+                <img src="/static/css/public/Bubble-sort-example-300px.gif">
+                <p>Big O complexity: Average and Worst Case: O(n²), Best Case: O(n)</p>
+                <li>Selection Sort</li>
+                <p>Is a basic comparison-based sorting algorithm that works by dividing the array into two segments: the sorted and the unsorted subarrays. During each iteration, it selects the smallest (or largest, depending on the desired order) element from the unsorted portion and swaps it with the first element of the unsorted segment.</p>
+                <img src="/static/css/public/Selextion-sort.gif">
+                <p>Best and Worst Time: O(n²)</p>
+                <li>Insertion Sort</li>
+                <p>Presents another relatively straightforward approach. It also segments the list into sorted and unsorted parts, but it arranges elements by shifting each one to the left until it finds its appropriate position relative to its neighbors, effectively "inserting" one element at a time into the correct location. </p>
+                <img src="static/css/public/Insertion-sort-example.gif">
+                <p>Big O complexity: Best Time: O(n), Worst Time: O(n²)</p>
+                <li>Merge Sort</li>
+                <p>Continually divides the list into equal halves until it cannot be further divided. By definition, if there's only one element in the list, it's considered sorted. Then, merge sort combines these smaller sorted lists while ensuring that the resulting new list remains sorted as well.</p>
+                <img src="static/css/public/Merge-sort-example-300px.gif">
+                <p>Big O complexity: O(n log n)</p>
+                <li>Quick Sort</li>
+                <p>Is a widely used sorting algorithm in Python programming. It follows the divide-and-conquer approach, where it selects a 'pivot' element from the array and partitions the other elements into two sub-arrays according to whether they are less than or greater than the pivot. It then recursively sorts the sub-arrays.</p>
+                <img src="static/css/public/Quicksort-example.gif">
+                <p>Big O complexity: Average: O(n log n), Worst: O(n²)</p>
+            </ol>
+        
+    </div>
+</body>
+</html>
