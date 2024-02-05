@@ -55,7 +55,7 @@ def build_mrt_lrt_graph():
     mrt_lrt_graph.add_vertex('Marikina')
     mrt_lrt_graph.add_vertex('Antipolo')
 
-    # MRT Line 3
+  # MRT Line 3
     mrt_lrt_graph.add_edge('North Avenue', 'Quezon Avenue')
     mrt_lrt_graph.add_edge('Quezon Avenue', 'Kamuning')
     mrt_lrt_graph.add_edge('Kamuning', 'MRT Cubao')
@@ -68,9 +68,10 @@ def build_mrt_lrt_graph():
     mrt_lrt_graph.add_edge('Buendia', 'Ayala')
     mrt_lrt_graph.add_edge('Ayala', 'Magallanes')
     mrt_lrt_graph.add_edge('Magallanes', 'Taft Avenue')
-    
-    # MRT to LRT Line 2
+
+    # MRT to LRT Line 2 (interchange at Araneta Center-Cubao)
     mrt_lrt_graph.add_edge('MRT Cubao', 'Araneta Center-Cubao')
+    mrt_lrt_graph.add_edge('Araneta Center-Cubao', 'MRT Cubao')
 
     # LRT Line 1
     mrt_lrt_graph.add_edge('Baclaran', 'EDSA')
@@ -85,9 +86,10 @@ def build_mrt_lrt_graph():
     mrt_lrt_graph.add_edge('Carriedo', 'Doroteo Jose')
     mrt_lrt_graph.add_edge('Doroteo Jose', 'Bambang')
     mrt_lrt_graph.add_edge('Bambang', 'Tayuman')
-    
-    # LRT Line 1 to LRT Line 2
+
+    # LRT Line 1 to LRT Line 2 (interchange at Doroteo Jose)
     mrt_lrt_graph.add_edge('Doroteo Jose', 'Recto')
+    mrt_lrt_graph.add_edge('Recto', 'Doroteo Jose')
 
     # LRT Line 2
     mrt_lrt_graph.add_edge('Recto', 'Legarda')
@@ -102,8 +104,12 @@ def build_mrt_lrt_graph():
     mrt_lrt_graph.add_edge('Katipunan', 'LRT Santolan')
     mrt_lrt_graph.add_edge('LRT Santolan', 'Marikina')
     mrt_lrt_graph.add_edge('Marikina', 'Antipolo')
-
+    
+    #LRT Line 1 and MRT Line 3
+    mrt_lrt_graph.add_edge('Taft Avenue', 'EDSA')
+    mrt_lrt_graph.add_edge('EDSA', 'Taft Avenue')
     return mrt_lrt_graph
+
 
 def find_shortest_path(graph, start, end):
     # Perform a Breadth-First Search (BFS) to find the shortest path
@@ -114,6 +120,8 @@ def find_shortest_path(graph, start, end):
         current_station, path = queue.pop(0)
         path = path + [current_station]
 
+        print(f"Visiting: {current_station}")
+
         if current_station == end:
             return path
 
@@ -123,17 +131,36 @@ def find_shortest_path(graph, start, end):
             if neighbor not in visited:
                 queue.append((neighbor, path))
 
+        # Special handling for interchange stations
+        if current_station == 'Araneta Center-Cubao':
+            for neighbor in graph.graph[current_station]:
+                if neighbor not in path and neighbor not in visited:
+                    queue.append((neighbor, path + [neighbor]))
+        elif current_station == 'Doroteo Jose':
+            for neighbor in graph.graph[current_station]:
+                if neighbor not in path and neighbor not in visited:
+                    queue.append((neighbor, path + [neighbor]))
+
     return None  # If no path is found
+
+
+# Add methods to the Graph class to get forward and reverse neighbors
+def get_forward_neighbor(self, station, path):
+    for neighbor in self.graph[station]:
+        if neighbor not in path:
+            return neighbor
+    return None
+
+def get_reverse_neighbor(self, station, path):
+    for neighbor in self.graph[station]:
+        if neighbor not in path:
+            return neighbor
+    return None
+
+# Add the new methods to the Graph class
+Graph.get_forward_neighbor = get_forward_neighbor
+Graph.get_reverse_neighbor = get_reverse_neighbor
 
 # Build the MRT and LRT graph
 mrt_lrt_graph = build_mrt_lrt_graph()
 
-# Find the shortest path between two stations
-start_station = input("Enter start station:\n")
-end_station = input("Enter end station:\n ")
-shortest_path = find_shortest_path(mrt_lrt_graph, start_station, end_station)
-
-if shortest_path:
-    print(f"Shortest path from {start_station} to {end_station}: {shortest_path}")
-else:
-    print(f"No path found from {start_station} to {end_station}")

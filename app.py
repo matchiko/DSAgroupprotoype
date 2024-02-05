@@ -9,7 +9,7 @@ from ternary_search import ternary_search, ternary_search_wrapper
 from postfix import infix_to_postfix
 from queue_deque import Queue, Deque
 from HashFunction import HashTable, process_commands
-from graph import Graph
+from graph import Graph, build_mrt_lrt_graph, find_shortest_path, mrt_lrt_graph
 
 app = Flask(__name__, static_url_path='/static')
 
@@ -182,9 +182,20 @@ stations = [
     'Araneta Center-Cubao', 'Anonas', 'Katipunan', 'LRT Santolan', 'Marikina', 
     'Antipolo'
 ]
-@app.route('/graphs.html')
+
+@app.route('/graphs.html', methods=['GET', 'POST'])
 def train():
-    return render_template('graphs.html', stations=stations)
+    if request.method == 'POST':
+        start_station = request.form['startStation']
+        end_station = request.form['endStation']
+        shortest_path = find_shortest_path(mrt_lrt_graph, start_station, end_station)
+
+        if shortest_path:
+            return render_template('graphs.html', stations=stations, shortest_path=shortest_path, start_station=start_station, end_station=end_station)
+        else:
+            return render_template('graphs.html', stations=stations, no_path=True, start_station=start_station, end_station=end_station)
+    else:
+        return render_template('graphs.html', stations=stations)
 
 if __name__ == '__main__':
     app.run(debug=True)
