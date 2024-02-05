@@ -8,11 +8,7 @@
     <link rel="stylesheet" href="/static/css/AppList.css" />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap"
     />
   </head>
   <body>
@@ -22,7 +18,7 @@
       <div class="apps">
         <div class="searchalgo">
           <b class="python-app">Python app</b>
-          <b href="/templates/SearchAlgo.html" style="color: rgb(255, 0, 157); text-decoration: none;"class="results">Results</b>
+          <b class="results">Results</b>
           <h1 class="search-algorithm">Search Algorithm</h1>
           <div class="searching-algorithms-are">
             Searching Algorithms are designed to check for an element or
@@ -30,9 +26,9 @@
             app measures searching speed of varying Search Algorithms.
           </div>
           <div class="searchalgo-child"></div>
-          <button class="button1" id="button">
-            <div class="button-item"></div>
-            <div class="join-today3">View More</div>
+          <button class="button" id="button">
+            <div class="button-child"></div>
+            <div class="join-today">View More</div>
           </button>
           <b class="definition">Definition</b>
         </div>
@@ -50,9 +46,9 @@
             improved readability and computational efficiency.
           </div>
           <div class="searchalgo-child"></div>
-          <button class="button2" id="button1">
-            <div class="button-item"></div>
-            <div class="join-today3">View More</div>
+          <button class="button1" id="button1">
+            <div class="button-child"></div>
+            <div class="join-today">View More</div>
           </button>
         </div>
         <div class="queue-deque">
@@ -65,9 +61,9 @@
             effortlessly.
           </div>
           <div class="searchalgo-child"></div>
-          <button class="button1" id="button2">
-            <div class="button-item"></div>
-            <div class="join-today3">View More</div>
+          <button class="button" id="button2">
+            <div class="button-child"></div>
+            <div class="join-today">View More</div>
           </button>
           <b class="definition1">Definition</b>
           <b class="definition1">Definition</b>
@@ -83,41 +79,62 @@
             a breeze.
           </div>
           <div class="searchalgo-child"></div>
-          <button class="button1" id="button3">
-            <div class="button-item"></div>
-            <div class="join-today3">View More</div>
+          <button class="button" id="button3">
+            <div class="button-child"></div>
+            <div class="join-today">View More</div>
           </button>
           <b class="definition1">Definition</b>
         </div>
-        <div class="comingsoon">
+        <div class="graphstrees">
           <img class="image-15-icon" alt="" src="/static/css/public/image-15@2x.png" />
 
-          <div class="comingsoon-child"></div>
+          <div class="graphstrees-child"></div>
           <b class="python-app1">Python app</b>
-          <h1 class="infix-to-postfix-container">Coming Soon</h1>
-          <div class="meet-your-new">
-            Place holder for upcoming applications
+          <h1 class="infix-to-postfix-container">Graphs and Trees</h1>
+          <div class="explore-and-sort">
+            Explore and sort data structures effortlessly! This app lets you
+            visualize graphs, trees, and apply sorting algorithms for a deeper
+            understanding.
           </div>
-          <button class="button1">
-            <div class="button-item"></div>
-            <div class="join-today3">View More</div>
+          <button class="button">
+            <div class="button-child" id="button4"></div>
+            <div class="join-today">View More</div>
+          </button>
+        </div>
+        <div class="sortingalgo">
+          <img class="image-16-icon" alt="" src="/static/css/public/image-16@2x.png" />
+
+          <div class="graphstrees-child"></div>
+          <b class="python-app1">Python app</b>
+          <h1 class="infix-to-postfix-container">Sorting Algorithms</h1>
+          <div class="explore-and-sort">
+            Master the art of sorting with this intuitive app! Dive into various
+            sorting algorithms such as Bubble Sort, Selection Sort, and Merge
+            Sort. Visualize each step, compare their efficiency, and enhance
+            your understanding of algorithmic principles. Whether you're a
+            beginner or an algorithm enthusiast, this app provides a hands-on
+            experience to sharpen your sorting skills.
+          </div>
+          <button class="button" id="button5">
+            <div class="button-child"></div>
+            <div class="join-today">View More</div>
           </button>
         </div>
         <div class="more">
           <div class="more-child"></div>
-          <b class="python-app5">Python app</b>
+          <b class="python-app6">Python app</b>
           <h1 class="experience-more-python">Experience more Python Apps!</h1>
           <button class="button6">
-            <div class="button-item"></div>
-            <div class="join-today3">View More</div>
+            <div class="button-child"></div>
+            <div class="join-today">View More</div>
           </button>
         </div>
       </div>
       <div class="sidebar">
         <div class="sidebar-child"></div>
         <div class="sidebar-item"></div>
-        <h3 class="home2" id="home">Home</h3>
-        <h3 class="about-us1" id="aboutUs">About Us</h3>
+        <h3 class="home" id="home">Home</h3>
+        <h3 class="about-us" id="aboutUs">About Us</h3>
         <div class="learn-more-about">Learn more about Python apps</div>
         <h3 class="contacts" id="contacts">Contacts</h3>
         <img class="logowhite-icon" alt="" src="/static/css/public/logowhite@2x.png" />
@@ -142,21 +159,35 @@
       var button2 = document.getElementById("button2");
       if (button2) {
         button2.addEventListener("click", function (e) {
-          window.location.href = "/QueueDeque.html";
+          window.location.href = "/QueDeque.html";
         });
       }
       
       var button3 = document.getElementById("button3");
       if (button3) {
         button3.addEventListener("click", function (e) {
-          window.location.href = '/HashFunc.html';
+          window.location.href = "/HashFunc.html";
         });
       }
       
+      var button4 = document.getElementById("button4");
+      if (button4) {
+        button4.addEventListener("click", function (e) {
+          window.location.href = "/graphs.html";
+        });
+      }
+
+      var button5 = document.getElementById("button5");
+      if (button5) {
+        button5.addEventListener("click", function (e) {
+          window.location.href = "/";
+        });
+      }
+
       var hashFuncContainer = document.getElementById("hashFuncContainer");
       if (hashFuncContainer) {
         hashFuncContainer.addEventListener("click", function (e) {
-          window.location.href = '/HashFunc.html';
+          window.location.href = "/HashFunc.html";
         });
       }
       
