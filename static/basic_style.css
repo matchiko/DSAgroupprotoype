@@ -3,21 +3,21 @@ body{
 }
 
 p {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 label {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 h1 {
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 h2 {
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .style2 {
@@ -33,7 +33,7 @@ h2 {
 }
 
 .header a {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-decoration: none;
     color: rgb(0, 0, 0);
     padding: 5px;
@@ -45,7 +45,7 @@ h2 {
 }
 
 .style1 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .gray{
@@ -62,13 +62,13 @@ h2 {
 .gray p{
     text-align: center;
     color: #3A3B3C;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .gray a{
     color: white;
     text-decoration: none;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .gray a:hover{
@@ -122,73 +122,11 @@ h2 {
     border-radius: 5px;
 }
 
-.profile-container{
-    display: flex;
-    padding: 15px;
-    justify-content: start;
-}
-
-.profile{
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    width: 350px;
-    float: left;
-}
-
-.profile h2{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-    line-height: 5px;
-}
-
-.profile p{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-}
-
-.profile h4{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    line-height: 5px;
-}
-
-.pfp {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin: 0 auto 10px;
-    display: block;
-}
-
-.icons{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    display: block;
-    padding: 5px;
-}
-
-.username{
-    text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color:#3A3B3C;
-}
-
-.profile-right{
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    width: 750px;
-    float: right;
-    margin-left: 50px;
-}
 
 table, td{
     max-width: 1200px;
     border-collapse: collapse;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     padding: 4px;
     margin: 0 auto;
     border-bottom: 1px solid #acacac;
@@ -252,6 +190,7 @@ input[type="submit"] {
     border: none;
     cursor: pointer;
     margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
 }
 
 .icons-container{
@@ -264,7 +203,7 @@ input[type="submit"] {
 }
 
 li{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: bold;
 }
 
@@ -272,4 +211,14 @@ img{
     height: 50%;
     width: 50%;
     margin: 0 auto;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
 }
