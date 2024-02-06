@@ -15,6 +15,7 @@ from selection_sort_algo import selection_sort
 from insertion_sort_algo import insertion_sort
 from merge_sort_algo import merge_sort
 from quick_sort_algo import quick_sort
+import time
 
 
 app = Flask(__name__, static_url_path='/static')
@@ -84,10 +85,9 @@ def enchanting_table():
             error = 'input is not integer. Please use integers only.'
             return render_template('HashFunction.html', cmd=None, numcommand=None, result=None, listall=None, error=error)
         
-        # check if the number is greater than or equal to one.
         numtype = int(numcommand)
         if numtype >= 1:
-            result = process_commands(my_array, cmd)  # Call the function directly
+            result = process_commands(my_array, cmd) 
             return render_template('HashFunction.html', cmd=None, numcommand=None, result=result, listall=None, error=None)
         if numtype <= 0:
             error = 'input is less than 1. Please use an integer greater than or equal to 1.'
@@ -97,7 +97,6 @@ def enchanting_table():
 
 @app.route('/Postfix.html', methods=["GET", "POST"])
 def Postfix():
-    # Request Infix Expression
     if request.method == "POST":
         infix_str = request.form.get("infix")
 
@@ -115,7 +114,6 @@ def dir():
     
     numbers = range(1, 1001)
     test_data = ", ".join(map(str, numbers))
-    #print(test_data)
     if request.method == "POST":
         array_str = request.form.get("array")
         target_str = request.form.get("target")
@@ -126,7 +124,7 @@ def dir():
             target = int(target_str)
             low, high = 0, len(array) - 1
 
-            result = -1  # Initialize result before the conditional statements
+            result = -1 
 
             if search_type == "exponential":
                 execution_time = timeit.timeit("exponential_search_wrapper(exponential_search, array, target)", globals={**globals(), "array": array, "target": target}, number=1)  * 1000 
@@ -183,7 +181,8 @@ stations = [
     'Ortigas', 'Shaw Boulevard', 'Boni', 'Guadalupe', 'Buendia', 'Ayala', 
     'Magallanes', 'Taft Avenue', 'Baclaran', 'EDSA', 'Libertad', 'Gil Puyat', 
     'Vito Cruz', 'Quirino', 'Pedro Gil', 'United Nations', 'Central Terminal', 
-    'Carriedo', 'Doroteo Jose', 'Bambang', 'Tayuman', 'Recto', 'Legarda', 
+    'Carriedo', 'Doroteo Jose', 'Bambang', 'Tayuman', 'Blumetritt', 'Abad Santos', 
+    'R. Papa', '5th Avenue', 'Monumento', 'Balintawak', 'Roosevelt',  'Recto', 'Legarda', 
     'Pureza', 'V. Mapa', 'J. Ruiz', 'Gilmore', 'Betty Go-Belmonte', 
     'Araneta Center-Cubao', 'Anonas', 'Katipunan', 'LRT Santolan', 'Marikina', 
     'Antipolo'
@@ -203,6 +202,7 @@ def train():
     else:
         return render_template('graphs.html', stations=stations)
     
+
 @app.route('/SortingAlgo.html', methods=['GET', 'POST'])
 def sort():
     if request.method == 'POST':
@@ -215,6 +215,7 @@ def sort():
         input_array = list(map(int, input_array.split(',')))
 
         selected_algorithm = request.form.get('algorithm')
+        start_time = time.time()
 
         if selected_algorithm == 'bubble':
             sorted_array = bubble_sort(input_array)
@@ -228,8 +229,13 @@ def sort():
             sorted_array = quick_sort(input_array)
         else:
             sorted_array = input_array  # Default to the input array if no algorithm is selected
+        
+        end_time = time.time()  # Record the end time
 
-        return render_template('SortingAlgo.html', result=sorted_array)
+        execution_time = end_time - start_time  # Calculate the execution time
+
+        return render_template('SortingAlgo.html', result=sorted_array, execution_time=execution_time)
+
 
     # If it's a GET request, render the initial page without any sorting results
     return render_template('SortingAlgo.html')

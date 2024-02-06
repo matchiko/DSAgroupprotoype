@@ -14,7 +14,7 @@
         <a href="/MemberPage.html">CONTACT</a>
     </div>
     <br>
-    <div class="contact-container"><h2>Sorting Algorithm Selector</h2>
+    <div class="contact-container"><h2>Sorting Algorithm</h2>
         <form id="sortingForm" action="/SortingAlgo.html" method="post">
             <label for="algorithm">Select Sorting Algorithm: </label>
             <select id="algorithm" name="algorithm">
@@ -32,8 +32,12 @@
         </form>
         <hr>
             <h2>Results</h2>
-            {% if result %}
+                {% if result %}
                 <p>Sorted Array: {{ result|join(', ') }}</p>
+            {% endif %}
+            
+            {% if execution_time is defined %}
+                <p><b>Execution Time:</b> {{ execution_time }} seconds</p>
             {% endif %}
             <hr>
             <h2>Types of Sorting Algorithms</h2>
